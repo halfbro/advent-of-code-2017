@@ -13,16 +13,6 @@ case.
 
 -}
 
-{-
-
-Strategy:
-Step 1: Create a second list by shifting the head to the end
-Step 2: Use zipWith on both lists to create a third list with either 0 or
-  the value of the number
-Step 3: Sum the third list to get the final answer
-
--}
-
 solveCaptcha :: [Int] -> Int
 solveCaptcha list =
   let shifted = (tail list) ++ [head list]
